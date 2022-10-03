@@ -1,15 +1,20 @@
-import { FcSettings } from 'react-icons/fc';
+import { FcHome } from 'react-icons/fc';
 
 export default {
   title: 'Home Page',
   name: 'homePage',
   type: 'object',
-  icon: FcSettings,
+  icon: FcHome,
   fields: [
     {
-      title: 'Seo Tags',
-      name: 'seo',
-      type: 'seo',
+      title: 'Profile Picture',
+      name: 'profilePic',
+      type: 'seoImage',
+    },
+    {
+      title: 'Description',
+      name: 'description',
+      type: 'text',
     },
   ],
 };

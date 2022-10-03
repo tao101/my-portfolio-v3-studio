@@ -1,13 +1,19 @@
 export default {
   title: 'Image',
   name: 'seoImage',
-  type: 'image',
-  options: {
-    hotspot: true, // <-- Defaults to false
-  },
+  type: 'object',
   fields: [
     {
-      name: 'caption',
+      name: 'image',
+      type: 'image',
+      title: 'Image',
+      options: {
+        hotspot: true,
+        isHighlighted: true, // <-- Defaults to false
+      },
+    },
+    {
+      name: 'alt',
       type: 'string',
       title: 'Alt text',
       options: {

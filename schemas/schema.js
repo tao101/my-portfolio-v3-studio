@@ -7,6 +7,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type';
 import seo from './objects/seo';
 import image from './objects/image';
 import websiteSettings from './objects/websiteSettings';
+import home from './pages/home';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -19,5 +20,8 @@ export default createSchema({
     seo,
     image,
     websiteSettings,
+
+    //pages
+    home,
   ]),
 });
