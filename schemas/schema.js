@@ -11,6 +11,7 @@ import home from './pages/home';
 import blogPost from './documents/blogPost';
 import category from './documents/category';
 import blockContent from './objects/blockContent';
+import worksCategory from './objects/worksCategory';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -24,6 +25,7 @@ export default createSchema({
     image,
     websiteSettings,
     blockContent,
+    worksCategory,
 
     //pages
     home,

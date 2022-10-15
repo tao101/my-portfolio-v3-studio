@@ -349,6 +349,21 @@ export default {
               type: 'seoImage',
             },
             {
+              title: 'Categories',
+              name: 'categories',
+              type: 'array',
+              of: [
+                {
+                  type: 'reference',
+                  to: [
+                    {
+                      type: 'worksCategory',
+                    },
+                  ],
+                },
+              ],
+            },
+            {
               title: 'Live url',
               name: 'url',
               type: 'url',

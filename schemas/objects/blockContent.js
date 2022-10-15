@@ -65,5 +65,27 @@ export default {
         },
       ],
     },
+    {
+      name: 'Code Snippet',
+      title: 'codeSnippet',
+      type: 'object',
+      fields: [
+        {
+          name: 'title',
+          title: 'Title only for editor not shown in frontend',
+          type: 'string',
+        },
+        {
+          name: 'Code',
+          title: 'code',
+          type: 'code',
+        },
+      ],
+      preview: {
+        select: {
+          title: 'title',
+        },
+      },
+    },
   ],
 };
