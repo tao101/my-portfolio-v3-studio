@@ -8,6 +8,9 @@ import seo from './objects/seo';
 import image from './objects/image';
 import websiteSettings from './objects/websiteSettings';
 import home from './pages/home';
+import blogPost from './documents/blogPost';
+import category from './documents/category';
+import blockContent from './objects/blockContent';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -20,8 +23,12 @@ export default createSchema({
     seo,
     image,
     websiteSettings,
+    blockContent,
 
     //pages
     home,
+
+    blogPost,
+    category,
   ]),
 });

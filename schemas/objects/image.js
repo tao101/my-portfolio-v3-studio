@@ -21,4 +21,10 @@ export default {
       },
     },
   ],
+  preview: {
+    select: {
+      media: 'image',
+      title: 'alt',
+    },
+  },
 };
