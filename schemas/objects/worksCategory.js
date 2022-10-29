@@ -1,7 +1,10 @@
+import { FcFilingCabinet } from 'react-icons/fc';
+
 export default {
   title: 'Works Category',
   name: 'worksCategory',
-  type: 'object',
+  icon: FcFilingCabinet,
+  type: 'document',
   fields: [
     {
       title: 'title',
