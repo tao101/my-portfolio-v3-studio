@@ -1,4 +1,5 @@
 import { FcFile } from 'react-icons/fc';
+import React from 'react';
 
 export default {
   title: 'Blog Post',
@@ -78,6 +79,60 @@ export default {
       title: 'Content',
       name: 'Content',
       type: 'blockContent',
+    },
+    {
+      title: 'Comments',
+      name: 'comments',
+      type: 'array',
+      of: [
+        {
+          title: 'Comment',
+          name: 'comment',
+          type: 'object',
+          fields: [
+            {
+              title: 'Approved',
+              name: 'approved',
+              type: 'boolean',
+            },
+            {
+              title: 'Name',
+              name: 'name',
+              type: 'string',
+            },
+            {
+              title: 'Email',
+              name: 'email',
+              type: 'string',
+            },
+            {
+              title: 'Comment',
+              name: 'comment',
+              type: 'text',
+            },
+          ],
+          preview: {
+            select: {
+              approved: 'approved',
+              name: 'name',
+              email: 'email',
+              comment: 'comment',
+            },
+            prepare(selection) {
+              const { approved, name, email, comment } = selection;
+              return {
+                title: `${name} - ${email} `,
+                subtitle: comment, // YYYY-MM-DD --> YYYY
+                media: (
+                  <span style={{ fontSize: '1.5rem' }}>
+                    {approved ? '✅' : '❌'}
+                  </span>
+                ),
+              };
+            },
+          },
+        },
+      ],
     },
   ],
 };
