@@ -71,6 +71,12 @@ export default {
         select: {
           title: 'title',
         },
+        prepare(selection) {
+          const { title } = selection;
+          return {
+            title: title,
+          };
+        },
       },
     },
   ],
