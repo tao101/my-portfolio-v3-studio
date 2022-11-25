@@ -50,24 +50,10 @@ export default {
     {
       type: 'seoImage',
     },
+
     {
-      title: 'Dots',
-      name: 'dots',
-      type: 'object',
-      fields: [
-        {
-          title: 'Dots title',
-          name: 'dots',
-          type: 'string',
-          description:
-            'just leave it empty the dots are inserted in the frontend',
-          initialValue: 'Dots',
-        },
-      ],
-    },
-    {
-      name: 'Code Snippet',
-      title: 'codeSnippet',
+      title: 'Code Snippet',
+      name: 'codeSnippet',
       type: 'object',
       fields: [
         {
