@@ -112,7 +112,7 @@ export default {
             },
             {
               title: 'Date',
-              type: 'date',
+              type: 'datetime',
               name: 'date',
             },
           ],
