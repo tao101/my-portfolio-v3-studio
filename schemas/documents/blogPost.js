@@ -110,6 +110,11 @@ export default {
               name: 'comment',
               type: 'text',
             },
+            {
+              title: 'Date',
+              type: 'date',
+              name: 'date',
+            },
           ],
           preview: {
             select: {

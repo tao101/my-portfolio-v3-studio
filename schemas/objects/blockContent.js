@@ -50,7 +50,29 @@ export default {
     {
       type: 'seoImage',
     },
-
+    {
+      title: 'Quote',
+      name: 'quote',
+      type: 'object',
+      fields: [
+        {
+          name: 'quote',
+          title: 'Quote',
+          type: 'string',
+        },
+      ],
+      preview: {
+        select: {
+          title: 'quote',
+        },
+        prepare(selection) {
+          const { quote } = selection;
+          return {
+            title: quote,
+          };
+        },
+      },
+    },
     {
       title: 'Code Snippet',
       name: 'codeSnippet',
