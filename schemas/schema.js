@@ -13,6 +13,7 @@ import category from './documents/category';
 import blockContent from './objects/blockContent';
 import worksCategory from './objects/worksCategory';
 import works from './documents/works';
+import contact from './documents/contact';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -34,5 +35,6 @@ export default createSchema({
     blogPost,
     category,
     works,
+    contact,
   ]),
 });
