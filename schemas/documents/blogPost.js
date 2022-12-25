@@ -1,5 +1,6 @@
 import { FcFile } from 'react-icons/fc';
 import React from 'react';
+import PreviewUrl from '../../components/previewUrl';
 
 export default {
   title: 'Blog Post',
@@ -49,6 +50,12 @@ export default {
 
         validation: (Rule) => Rule.required(),
       },
+    },
+    {
+      title: 'Preview Url',
+      name: 'previewUrl',
+      type: 'string',
+      inputComponent: PreviewUrl,
     },
     {
       title: 'Description',
